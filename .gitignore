@@ -1,0 +1,6 @@
+classes
+out
+*.jar
+build
+test.lck
+test.properties
