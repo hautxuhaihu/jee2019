@@ -3,9 +3,9 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:/develop/gradle-5.0" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../develop/gradle-5.2.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />

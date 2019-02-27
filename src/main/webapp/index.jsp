@@ -12,5 +12,6 @@
 </head>
 <body>
 Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
+<a href="login.jsp">login</a>
 </body>
 </html>
