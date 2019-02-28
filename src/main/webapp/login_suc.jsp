@@ -3,7 +3,7 @@
 <head>
     <title>login suc</title>
 </head>
-<body>
+<body leftmargin="30px" topmargin="30px">
 login suc
 </body>
 </html>

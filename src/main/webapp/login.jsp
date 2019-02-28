@@ -3,10 +3,10 @@
 <head>
     <title>login</title>
 </head>
-<body>
+<body leftmargin="30px" topmargin="30px">
 <form action="check.jsp">
-    username:<input type="text" name="username"/>
-    pass:<input type="password" name="pass"/>
+    username:<input type="text" name="username"/><br>
+    pass:<input type="password" name="pass"/><br>
     <input type="submit"/>
 </form>
 </body>

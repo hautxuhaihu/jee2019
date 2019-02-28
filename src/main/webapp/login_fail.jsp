@@ -3,7 +3,7 @@
 <head>
     <title>login fail</title>
 </head>
-<body>
+<body leftmargin="30px" topmargin="30px">
 login fail
 </body>
 </html>

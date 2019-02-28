@@ -10,8 +10,10 @@
 <head>
     <title>wel,struts2</title>
 </head>
-<body>
+<body leftmargin="30px" topmargin="30px">
 Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
+<hr width="30%" align="left" style="border:1px solid green"/>
+<h3>入门</h3>
 <a href="login.jsp">login</a>
 </body>
 </html>
