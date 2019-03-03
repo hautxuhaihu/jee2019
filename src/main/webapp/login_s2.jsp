@@ -13,8 +13,8 @@
 </form>
 用Struts2标签实现登录
 <s:form name="loginTag" action="checkLogin">
-  <s:textfield name="username" label="username"/>
-  <s:password name="pass" label="pass"/>
+  <s:textfield name="username" label="username" requiredLabel="true"/>
+  <s:password name="pass" label="pass" labelposition="top"/>
   <s:submit/>
 </s:form>
 </body>

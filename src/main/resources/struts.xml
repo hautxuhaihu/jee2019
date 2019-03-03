@@ -7,7 +7,7 @@
 <struts>
     <package name="default" extends="struts-default">
         <action name="checkLogin" class="controller.CheckLogin">
-            <result name="suc">/login_s2_suc.jsp</result>
+            <result name="suc" type="redirect">/login_s2_suc.jsp</result>
             <result name="fail">/login_s2_fail.jsp</result>
             <result name="input">/login_s2.jsp</result>
         </action>

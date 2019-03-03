@@ -27,6 +27,9 @@ public class CheckLogin extends ActionSupport {
     if (username.isEmpty()) {
       addFieldError("username", "没有输入用户名");
     }
+    if (pass.isEmpty()) {
+      addFieldError("pass", "没有输入密码");
+    }
   }
 
   @Override

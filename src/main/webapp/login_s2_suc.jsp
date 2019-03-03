@@ -11,6 +11,8 @@
   <title>login s2 suc</title>
 </head>
 <body leftmargin="30px" topmargin="30px">
+<s:debug/>
 login s2 suc
+username:<s:property value="username"/>
 </body>
 </html>

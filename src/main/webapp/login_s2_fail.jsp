@@ -11,6 +11,7 @@
   <title>login s2 fail</title>
 </head>
 <body leftmargin="30px" topmargin="30px">
+<s:debug/>
 login s2 fail
 </body>
 </html>
