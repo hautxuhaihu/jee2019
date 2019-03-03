@@ -5,5 +5,10 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-
+    <package name="default" extends="struts-default">
+        <action name="checkLogin" class="controller.CheckLogin">
+            <result name="suc">/login_s2_suc.jsp</result>
+            <result name="fail">/login_s2_fail.jsp</result>
+        </action>
+    </package>
 </struts>
