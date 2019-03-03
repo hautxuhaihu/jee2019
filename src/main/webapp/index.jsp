@@ -15,6 +15,6 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <hr width="30%" align="left" style="border:1px solid green"/>
 <h3>入门</h3>
 <a href="login.jsp">login</a>
-<a href="login_s2.jsp">struts2实现的login</a>
+<a href="login_s2.jsp">struts2实现的login(标签)</a>
 </body>
 </html>
