@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>login</title>
+  <s:head/>
 </head>
 <body leftmargin="30px" topmargin="30px">
 <form action="checkLogin">

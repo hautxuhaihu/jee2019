@@ -23,6 +23,13 @@ public class CheckLogin extends ActionSupport {
   }
 
   @Override
+  public void validate() {
+    if (username.isEmpty()) {
+      addFieldError("username", "没有输入用户名");
+    }
+  }
+
+  @Override
   public String execute() {
     System.out.printf("%s,%s%n", username, pass);
     if (username.equalsIgnoreCase("admin")) {

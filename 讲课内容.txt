@@ -1,0 +1,31 @@
+gitee.com
+文档
+git pull
+MVC 
+V:login.jsp login_suc.jsp
+login_fail.jsp
+check.jsp逻辑判断
+接收值：变量名和文本框名字一致
+No result defined for action controller.CheckLogin and result fail
+没有定义fail对应的页面
+
+form action="checkLogin"
+  username
+  pass
+  
+  
+  CheckLogin
+  username,pass/setter,getter
+  String execute{
+     if return "suc"
+	 else return "fail"
+  }
+  struts.xml
+  <action name="checkLogin" class="controller.CheckLogin">
+    <result name="suc"></result>
+	<result name="fail"></result>
+  </action>
+  
+  @Override public void validate
+  
+  addFieldError(文本框的名字，错误信息)
