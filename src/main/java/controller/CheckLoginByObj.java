@@ -13,6 +13,7 @@ public class CheckLoginByObj extends ActionSupport {
   public void setStu(Stu stu) {
     this.stu = stu;
   }
+  //todo 校验
 
   public String execute() {
     if (stu.getUsername().equalsIgnoreCase("admin")) {
