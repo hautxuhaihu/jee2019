@@ -11,5 +11,8 @@
             <result name="fail">/login_s2_fail.jsp</result>
             <result name="input">/login_s2.jsp</result>
         </action>
+        <action name="logout" class="controller.Logout">
+            <result>/index.jsp</result>
+        </action>
     </package>
 </struts>

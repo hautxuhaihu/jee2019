@@ -35,6 +35,10 @@ form action="checkLogin"
  ### 结果类型
  redirect，怎么取值
  <s:property value="username"/>
- session
+ java.util.Map session
+ put(key,value),remove(key)
+ 怎么注销?
+ 需要一个action,然后remove
+ 
  
  

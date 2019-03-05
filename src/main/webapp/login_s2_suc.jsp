@@ -15,5 +15,7 @@
 login s2 suc
 username:<s:property value="username"/><br>
 session:<s:property value="#session.username"/>
+<br>
+<a href="logout.action">logout</a>
 </body>
 </html>
