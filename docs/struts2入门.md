@@ -32,3 +32,9 @@ form action="checkLogin"
   
   addFieldError(文本框的名字，错误信息)
  ```
+ ### 结果类型
+ redirect，怎么取值
+ <s:property value="username"/>
+ session
+ 
+ 

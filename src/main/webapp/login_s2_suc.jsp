@@ -13,6 +13,7 @@
 <body leftmargin="30px" topmargin="30px">
 <s:debug/>
 login s2 suc
-username:<s:property value="username"/>
+username:<s:property value="username"/><br>
+session:<s:property value="#session.username"/>
 </body>
 </html>
