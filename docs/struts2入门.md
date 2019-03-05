@@ -40,5 +40,8 @@ form action="checkLogin"
  ### 怎么注销?
  需要一个action,然后remove   
   s:if
+  
+  ### 怎么把文本框值提交给一个对象
+  Stu(username,pass)
  
  

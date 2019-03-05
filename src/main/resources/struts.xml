@@ -14,5 +14,9 @@
         <action name="logout" class="controller.Logout">
             <result>/index.jsp</result>
         </action>
+        <action name="checkLoginByObj" class="controller.CheckLoginByObj">
+            <result>/login_obj_suc.jsp</result>
+            <result name="fail">/login_obj_fail.jsp</result>
+        </action>
     </package>
 </struts>
