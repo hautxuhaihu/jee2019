@@ -37,8 +37,8 @@ form action="checkLogin"
  <s:property value="username"/>
  java.util.Map session
  put(key,value),remove(key)
- 怎么注销?
- 需要一个action,然后remove
- 
+ ### 怎么注销?
+ 需要一个action,然后remove   
+  s:if
  
  
