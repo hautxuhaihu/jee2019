@@ -16,10 +16,19 @@ repositories {
 dependencies {   
     compile group: 'org.apache.struts', name: 'struts2-core', version: '2.5.5'
 
-    //compile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.1'
+    compile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.1'
 
     //compile group: 'org.apache.logging.log4j', name: 'log4j-web', version: '2.11.1'
     //compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2', version: '2.1.1.RELEASE'
 
 
+}
+task dbStart(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'org.hsqldb.server.Server'
+    workingDir='db'
+}
+task dbManager(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'org.hsqldb.util.DatabaseManagerSwing'
 }

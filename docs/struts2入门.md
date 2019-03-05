@@ -43,5 +43,9 @@ form action="checkLogin"
   
   ### 怎么把文本框值提交给一个对象
   Stu(username,pass)
- 
+  
+  ### 数据库中校验
+  hsqldb
+  
+ Stu(id,username,pass,java,math,os)
  
