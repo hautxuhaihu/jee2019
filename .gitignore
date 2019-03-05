@@ -1,5 +1,7 @@
 classes
 out
+.gradle
+.idea
 *.jar
 build
 test.lck
