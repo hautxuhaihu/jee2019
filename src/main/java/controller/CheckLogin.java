@@ -6,7 +6,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import java.util.Map;
 
 public class CheckLogin extends ActionSupport {
-  private String username, pass;//å˜é‡åå’Œæ–‡æœ¬æ¡†åå­—ä¸€æ ·
+  private String username, pass;//±äÁ¿ÃûºÍÎÄ±¾¿òÃû×ÖÒ»Ñù
   //setter getter
 
   public String getUsername() {
@@ -28,10 +28,10 @@ public class CheckLogin extends ActionSupport {
   @Override
   public void validate() {
     if (username.isEmpty()) {
-      addFieldError("username", "æ²¡æœ‰è¾“å…¥ç”¨æˆ·å");
+      addFieldError("username", "Ã»ÓĞÊäÈëÓÃ»§Ãû");
     }
     if (pass.isEmpty()) {
-      addFieldError("pass", "æ²¡æœ‰è¾“å…¥å¯†ç ");
+      addFieldError("pass", "Ã»ÓĞÊäÈëÃÜÂë");
     }
   }
 
