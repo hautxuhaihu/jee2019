@@ -24,8 +24,19 @@
  - [x] 提交到Stu对象
  - [x] 提交到对象时验证，作业
  - [ ] 用s:iterator显示所有学生，作业
+ ### 工具
+ - [ ] gradle
+ - [ ] log4j2
+ - [ ] lombok
+ - [ ] gretty
  #### i18n
  - [ ] java中的i18n
    - [ ] Locale
    - [ ] 资源文件，编码，ResourceBundle
-   - [ ] MessageFormat 
+   - [ ] MessageFormat，占位符
+   - [ ] 显示所欲语言地区
+   - [ ] action中显示国际化信息，占位符
+   - [ ] jsp中国际化信息，forward和redirect时不同，占位符
+   - [ ] 缺省资源文件，首页从哪取值
+   - [ ] 使用资源文件中其它key
+   
