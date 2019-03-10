@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'war'
+    id "io.freefair.lombok" version "3.1.4"
 }
 apply from: 'https://raw.github.com/gretty-gradle-plugin/gretty/master/pluginScripts/gretty.plugin'
 group 'cn.simple'
@@ -16,8 +17,8 @@ gretty{
     servletContainer = 'tomcat8'
 }
 dependencies {
-    compileOnly 'org.projectlombok:lombok:1.18.2'
-    annotationProcessor 'org.projectlombok:lombok:1.18.2'//1.16.20
+    //compileOnly 'org.projectlombok:lombok:1.18.2'
+    //annotationProcessor 'org.projectlombok:lombok:1.18.2'//1.16.20
     compile group: 'org.apache.struts', name: 'struts2-core', version: '2.5.5'
 
     compile group: 'org.hsqldb', name: 'hsqldb', version: '2.4.0'
