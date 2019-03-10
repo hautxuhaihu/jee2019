@@ -12,8 +12,8 @@
 ### 资源
 [作业部落md编辑器，实时预览](https://www.zybuluo.com/mdeditor)
 ### Todo
-- [ ] 试试pull request，是不是可以先提交给给学委
-- [ ] 简单说下md语法
+- [x] 试试pull request，是不是可以先提交给给学委
+- [x] 简单说下md语法
 #### 入门内容
  - [ ] log4j2
  - [x] session
@@ -25,18 +25,20 @@
  - [x] 提交到对象时验证，作业
  - [ ] 用s:iterator显示所有学生，作业
  ### 工具
- - [ ] gradle
+ - [x] gradle
  - [ ] log4j2
  - [ ] lombok
  - [ ] gretty
+ - [ ] junit
  #### i18n
  - [ ] java中的i18n
    - [ ] Locale
    - [ ] 资源文件，编码，ResourceBundle
    - [ ] MessageFormat，占位符
-   - [ ] 显示所欲语言地区
-   - [ ] action中显示国际化信息，占位符
-   - [ ] jsp中国际化信息，forward和redirect时不同，占位符
-   - [ ] 缺省资源文件，首页从哪取值
-   - [ ] 使用资源文件中其它key
+   - [ ] 显示所有语言地区
+  - [ ] struts2中国际化
+    - [ ] action中显示国际化信息，占位符
+    - [ ] jsp中国际化信息，forward和redirect时不同，占位符
+    - [ ] 缺省资源文件，首页从哪取值
+    - [ ] 使用资源文件中其它key
    
