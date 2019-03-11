@@ -13,7 +13,12 @@ public class CheckLoginByObj extends ActionSupport {
   public void setStu(Stu stu) {
     this.stu = stu;
   }
-  //todo 校验
+  //校验
+  @Override public void validate(){
+    if(stu.getUsername().isEmpty()){
+      addFieldError("stu.username","用户名为空");
+    }
+  }
 
   public String execute() {
     if (stu.getUsername().equalsIgnoreCase("admin")) {
