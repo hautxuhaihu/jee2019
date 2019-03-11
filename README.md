@@ -27,7 +27,7 @@
  ### 工具
  - [x] gradle
  - [x] log4j2
- - [ ] lombok
+ - [x] lombok
  - [ ] gretty
  - [ ] junit
  #### i18n

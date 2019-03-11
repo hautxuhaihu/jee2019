@@ -13,10 +13,10 @@ public class CheckLoginByObj extends ActionSupport {
   public void setStu(Stu stu) {
     this.stu = stu;
   }
-  //æ ¡éªŒ
+  //Ğ£Ñé
   @Override public void validate(){
     if(stu.getUsername().isEmpty()){
-      addFieldError("stu.username","ç”¨æˆ·åä¸ºç©º");
+      addFieldError("stu.username","ÓÃ»§ÃûÎª¿Õ");
     }
   }
 
