@@ -4,10 +4,13 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import dao.StuDAO;
 import dao.StuDAOImp;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
 public class CheckLogin extends ActionSupport {
+  private final static Logger logger= LoggerFactory.getLogger(CheckLogin.class);
   private String username, pass;//变量名和文本框名字一样
   //setter getter
 
@@ -39,7 +42,8 @@ public class CheckLogin extends ActionSupport {
 
   @Override
   public String execute() {
-    System.out.printf("%s,%s%n", username, pass);
+    //System.out.printf("%s,%s%n", username, pass);
+    logger.debug("username is {},pass is {}",username,pass);
     if (username.equalsIgnoreCase("admin")) {
       Map session = ActionContext.getContext().getSession();
       session.put("username", username);
