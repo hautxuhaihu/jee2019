@@ -2,6 +2,8 @@ package controller;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import dao.StuDAO;
+import dao.StuDAOImp;
 
 import java.util.Map;
 
@@ -45,6 +47,13 @@ public class CheckLogin extends ActionSupport {
     } else {
       return "fail";
     }
+  }
+
+  public String checkInDb() throws Exception {
+    StuDAO dao = new StuDAOImp();
+    boolean isSuc = dao.check(username, pass);
+    if (isSuc) return "suc";
+    else return "fail";
   }
 }
 

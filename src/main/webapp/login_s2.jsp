@@ -17,5 +17,11 @@
   <s:password name="pass" label="pass" labelposition="top"/>
   <s:submit/>
 </s:form>
+check in db
+<s:form name="loginTag" action="checkLoginInDb">
+  <s:textfield name="username" label="username" requiredLabel="true"/>
+  <s:password name="pass" label="pass"/>
+  <s:submit/>
+</s:form>
 </body>
 </html>

@@ -18,5 +18,10 @@
             <result>/login_obj_suc.jsp</result>
             <result name="fail">/login_obj_fail.jsp</result>
         </action>
+        <action name="checkLoginInDb" class="controller.CheckLogin" method="checkInDb">
+            <result name="suc" type="redirect">/login_s2_suc.jsp</result>
+            <result name="fail">/login_s2_fail.jsp</result>
+            <result name="input">/login_s2.jsp</result>
+        </action>
     </package>
 </struts>

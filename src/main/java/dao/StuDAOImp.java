@@ -15,7 +15,7 @@ public class StuDAOImp implements StuDAO {
     boolean isSuc=false;
     Class.forName(driver);
     String sql="select * from stu where username=? and pass=?";
-    try (Connection con = DriverManager.getConnection(url, user, pass1);
+    try (Connection con = DriverManager.getConnection(url, user, pass);
          PreparedStatement pstmt=con.prepareStatement(sql)){
       pstmt.setString(1,username);
       pstmt.setString(2,pass1);
