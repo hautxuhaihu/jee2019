@@ -2,6 +2,7 @@ package demo;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.text.MessageFormat;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -11,13 +12,21 @@ public class I18NDemo {
     /*inCn();
     inTw();
     loc();*/
-    i18n();
+    //i18n();
+    format();
+  }
+  public static void format(){
+    //放在资源文件中，getString
+    ResourceBundle res=ResourceBundle.getBundle("demo.msg");
+    String val=res.getString("age.negative");
+    String result=MessageFormat.format(val,-32);
+    logger.debug(result);
+    logger.debug(MessageFormat.format("学号-{0}，年龄{1},{1}-{0}",1L,18));
   }
   public static void i18n(){
     ResourceBundle res=ResourceBundle.getBundle("demo.msg");
     String val=res.getString("id");
     logger.debug(val);
-
   }
   public static void loc(){
     Locale loc=Locale.getDefault();
