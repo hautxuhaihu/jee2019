@@ -4,6 +4,8 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import dao.StuDAO;
 import dao.StuDAOImp;
+import lombok.Getter;
+import lombok.Setter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,14 +31,19 @@ public class CheckLogin extends ActionSupport {
   public void setPass(String pass) {
     this.pass = pass;
   }
-
+  @Getter @Setter
+  int age;
   @Override
   public void validate() {
     if (username.isEmpty()) {
-      addFieldError("username", "没有输入用户名");
+      addFieldError("username", getText("username.empty"));
     }
     if (pass.isEmpty()) {
       addFieldError("pass", "没有输入密码");
+    }
+    //todo
+    if(age<0){
+      addFieldError("age","年龄不能小于0,你输入的是"+age);
     }
   }
 
