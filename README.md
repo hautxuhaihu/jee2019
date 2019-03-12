@@ -28,8 +28,8 @@
  - [x] gradle
  - [x] log4j2
  - [x] lombok
- - [ ] gretty
- - [ ] junit
+ - [x] gretty
+ - [x] junit
  #### i18n
  - [ ] java中的i18n
    - [ ] Locale

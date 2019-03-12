@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'war'
+    id 'application'
     id "io.freefair.lombok" version "3.1.4"
 }
 apply from: 'https://raw.github.com/gretty-gradle-plugin/gretty/master/pluginScripts/gretty.plugin'
@@ -39,3 +40,4 @@ task dbManager(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'org.hsqldb.util.DatabaseManagerSwing'
 }
+mainClassName="demo.I18NDemo"
