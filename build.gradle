@@ -4,7 +4,7 @@ plugins {
     id 'application'
     id "io.freefair.lombok" version "3.1.4"
 }
-apply from: 'https://raw.github.com/gretty-gradle-plugin/gretty/master/pluginScripts/gretty.plugin'
+apply from: 'gretty.plugin'
 group 'cn.simple'
 version '1.0'
 
