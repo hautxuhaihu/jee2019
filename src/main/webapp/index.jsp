@@ -19,5 +19,7 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <a href="login.jsp">login</a>
 <a href="login_s2.jsp">struts2实现的login(标签、校验、数据库)</a>
 <a href="login_s2_obj.jsp">用Stu接收值</a>
+<br>
+<a href="login_s2_i18n.jsp">login i18n</a>
 </body>
 </html>

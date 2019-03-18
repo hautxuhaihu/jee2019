@@ -24,5 +24,9 @@
             <result name="fail">/login_s2_fail.jsp</result>
             <result name="input">/login_s2.jsp</result>
         </action>
+        <action name="checkLoginByI18N" class="controller.CheckLogin">
+            <result name="suc">/login_i18n_suc.jsp</result>
+            <result name="input">/login_s2_i18n.jsp</result>
+        </action>
     </package>
 </struts>
