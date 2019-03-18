@@ -13,7 +13,19 @@ public class I18NDemo {
     inTw();
     loc();*/
     //i18n();
-    format();
+    //format();
+    order();
+  }
+  /**资源文件的加载顺序*/
+  public static void order(){
+    Locale loc=Locale.US;
+    //只有zh_CN，需要en_US
+    ResourceBundle res=ResourceBundle.getBundle("demo.order",loc);
+    String val=res.getString("key.cn");
+    logger.debug(val);
+    //todo 有en资源包从哪里取？
+    //todo 取zh_CN有的key，但en没有的key
+    //todo s:select显示所有语言地区
   }
   public static void format(){
     //放在资源文件中，getString
