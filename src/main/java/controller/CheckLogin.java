@@ -43,7 +43,7 @@ public class CheckLogin extends ActionSupport {
     }
     //todo
     if(age<0){
-      addFieldError("age","年龄不能小于0,你输入的是"+age);
+      addFieldError("age",getText("age.illegal",new String[]{""+age}));
     }
   }
 
