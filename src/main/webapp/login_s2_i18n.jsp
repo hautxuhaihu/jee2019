@@ -11,6 +11,7 @@ i18n
   <s:textfield name="username" label="username" requiredLabel="true"/>
   <s:password name="pass" label="pass"/>
   <s:textfield name="age" label="age"/>
+  <s:radio name="type" list="{'forward','redirect'}" value="'forward'"/>
   <s:submit/>
 </s:form>
 </body>
