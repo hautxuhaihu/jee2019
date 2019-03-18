@@ -8,7 +8,7 @@
 <body leftmargin="30px" topmargin="30px">
 i18n
 <s:form name="loginTag" action="checkLoginByI18N">
-  <s:textfield name="username" label="username" requiredLabel="true"/>
+  <s:textfield name="username" key="username" requiredLabel="true"/>
   <s:password name="pass" label="pass"/>
   <s:textfield name="age" label="age"/>
   <s:radio name="type" list="{'forward','redirect'}" value="'forward'"/>
