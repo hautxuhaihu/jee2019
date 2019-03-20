@@ -30,5 +30,8 @@
             <result name="redirect" type="redirect">/login_i18n_suc.jsp</result>
             <result name="input">/login_s2_i18n.jsp</result>
         </action>
+        <action name="showLocs" class="controller.ShowLocs">
+            <result>/show_locs.jsp</result>
+        </action>
     </package>
 </struts>

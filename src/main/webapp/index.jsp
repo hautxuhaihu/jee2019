@@ -21,5 +21,8 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <a href="login_s2_obj.jsp">用Stu接收值</a>
 <br>
 <a href="login_s2_i18n.jsp">login i18n</a>
+<br>
+<s:url var="showLocsUrl" action="showLocs"/>
+<a href="${showLocsUrl}">显示所有语言地区</a>
 </body>
 </html>
