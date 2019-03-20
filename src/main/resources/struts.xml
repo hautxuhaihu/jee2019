@@ -35,4 +35,5 @@
         </action>
     </package>
     <include file="ns.xml"/>
+    <include file="interceptor.xml"/>
 </struts>

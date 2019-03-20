@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="interceptor" extends="struts-default">
+        <interceptors>
+            <interceptor name="assignDate" class="interceptor.AssignDateInterceptor"/>
+        </interceptors>
+        <action name="myAction" class="controller.MyAction">
+            <result>/interceptor_suc.jsp</result>
+            <interceptor-ref name="assignDate"/>
+        </action>
+
+    </package>
+
+</struts>

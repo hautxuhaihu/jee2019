@@ -35,6 +35,8 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <a href="${cnhn2Default}">/cn/hn访问默认</a>
 <s:url var="cnhn2Root" action="root" namespace="/cn/hn"/>
 <a href="${cnhn2Root}">/cn/hn访问/</a>
-
+<hr width="30%" align="left" style="border:1px solid red"/>
+<h3>拦截器</h3>
+<a href="myAction">设置日期</a>
 </body>
 </html>
