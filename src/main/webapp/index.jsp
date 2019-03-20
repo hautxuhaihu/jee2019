@@ -24,5 +24,17 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <br>
 <s:url var="showLocsUrl" action="showLocs"/>
 <a href="${showLocsUrl}">显示所有语言地区</a>
+<hr width="30%" align="left" style="border:1px solid purple"/>
+<h3>命名空间互相访问</h3>
+<s:url var="root2Default" action="default" namespace="/"/>
+<a href="${root2Default}">/访问默认</a>
+<s:url var="root2Cnhn" action="sub" namespace="/"/>
+<a href="${root2Cnhn}">/访问/cn/hn</a>
+<br>
+<s:url var="cnhn2Default" action="default" namespace="/cn/hn"/>
+<a href="${cnhn2Default}">/cn/hn访问默认</a>
+<s:url var="cnhn2Root" action="root" namespace="/cn/hn"/>
+<a href="${cnhn2Root}">/cn/hn访问/</a>
+
 </body>
 </html>

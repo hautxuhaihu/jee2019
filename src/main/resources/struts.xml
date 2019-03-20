@@ -34,4 +34,5 @@
             <result>/show_locs.jsp</result>
         </action>
     </package>
+    <include file="ns.xml"/>
 </struts>
