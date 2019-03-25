@@ -9,4 +9,7 @@ import java.util.Date;
 public class MyAction extends ActionSupport {
   @Setter @Getter
   Date date;
+  @Getter @Setter
+  String name;
+
 }

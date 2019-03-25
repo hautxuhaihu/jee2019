@@ -8,9 +8,14 @@
         <interceptors>
             <interceptor name="assignDate" class="interceptor.AssignDateInterceptor"/>
         </interceptors>
-        <action name="myAction" class="controller.MyAction">
+        <action name="myActionNoParams" class="controller.MyAction">
             <result>/interceptor_suc.jsp</result>
             <interceptor-ref name="assignDate"/>
+        </action>
+        <action name="myActionWithParams" class="controller.MyAction">
+            <result>/interceptor_suc.jsp</result>
+            <interceptor-ref name="assignDate"/>
+            <interceptor-ref name="params"/>
         </action>
 
     </package>

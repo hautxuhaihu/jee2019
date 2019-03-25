@@ -5,5 +5,9 @@
     <title>login</title>
 </head>
 <body leftmargin="30px" topmargin="30px">
-<s:property value="date"/></body>
+<s:debug/>
+<s:property value="date"/>
+<br>
+name-<s:property value="name"/></body>
+
 </html>

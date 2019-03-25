@@ -38,5 +38,7 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <hr width="30%" align="left" style="border:1px solid red"/>
 <h3>拦截器</h3>
 <a href="myAction">设置日期</a>
+<a href="interceptor_input.jsp">通过文本框为赋值</a>
+
 </body>
 </html>
