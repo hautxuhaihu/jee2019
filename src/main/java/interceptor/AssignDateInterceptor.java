@@ -11,6 +11,6 @@ public class AssignDateInterceptor extends AbstractInterceptor {
   public String intercept(ActionInvocation invocation) throws Exception {
     MyAction action=(MyAction)invocation.getAction();
     action.setDate(new Date());
-    return null;
+    return invocation.invoke();
   }
 }
