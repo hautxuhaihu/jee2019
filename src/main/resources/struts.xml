@@ -44,6 +44,10 @@
             <exception-mapping exception="java.io.IOException" result="io_ex"/>
             <result name="io_ex">/io_ex.jsp</result>
         </action>
+        <action name="validation" class="controller.XmlValidation">
+            <result>/validation_suc.jsp</result>
+            <result name="input">/validation_input.jsp</result>
+        </action>
     </package>
     <include file="ns.xml"/>
     <include file="interceptor.xml"/>
