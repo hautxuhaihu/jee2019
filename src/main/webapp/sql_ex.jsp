@@ -6,7 +6,7 @@
 </head>
 <body leftmargin="30px" topmargin="30px">
 <s:debug/>
-io_ex<br>
+sql ex<br>
 exception:<s:property value="exception.cause"/>
 exception:<s:property value="exception.message"/>
 

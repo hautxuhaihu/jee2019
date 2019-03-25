@@ -6,7 +6,14 @@
 
 <struts>
     <constant name="struts.custom.i18n.resources" value="global"/>
+
     <package name="default" extends="struts-default">
+        <global-results>
+            <result name="sql_ex">/sql_ex.jsp</result>
+        </global-results>
+        <global-exception-mappings>
+            <exception-mapping exception="java.sql.SQLException" result="sql_ex"/>
+        </global-exception-mappings>
         <action name="checkLogin" class="controller.CheckLogin">
             <result name="suc" type="redirect">/login_s2_suc.jsp</result>
             <result name="fail">/login_s2_fail.jsp</result>
