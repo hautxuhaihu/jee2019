@@ -9,4 +9,6 @@ public class XmlValidation extends ActionSupport {
   private int test_int;
   @Getter
   private int minValue=5;
+  @Getter @Setter
+  private String test_requiredstring;
 }

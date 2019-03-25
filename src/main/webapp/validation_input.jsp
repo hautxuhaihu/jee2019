@@ -9,8 +9,10 @@
 <s:debug/>
 <s:form name="validationDemo" action="validation">
     <s:textfield name="test_int" label="test_int([5,20]?)"/>
+    <s:textfield name="test_requiredstring" label="test_requiredstring"/>
     <s:submit/>
 </s:form>
 </body>
 
 </html>
+

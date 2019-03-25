@@ -10,4 +10,10 @@
             <message key="test_int.outof.range"/>
         </field-validator>
     </field>
+    <field name="test_requiredstring">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>必须输入值</message>
+        </field-validator>
+    </field>
 </validators>
