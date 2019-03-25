@@ -33,6 +33,10 @@
         <action name="showLocs" class="controller.ShowLocs">
             <result>/show_locs.jsp</result>
         </action>
+        <action name="exDemo" class="controller.ExDemo">
+            <exception-mapping exception="java.io.IOException" result="io_ex"/>
+            <result name="io_ex">/io_ex.jsp</result>
+        </action>
     </package>
     <include file="ns.xml"/>
     <include file="interceptor.xml"/>

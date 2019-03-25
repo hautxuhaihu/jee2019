@@ -42,6 +42,8 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <s:url var="privateUrl" action="private" namespace="/sec"/>
 <a href="${privateUrl}">没有登录不能访问</a>
 <br>
-
+<hr width="30%" align="left" style="border:1px solid red"/>
+<h3>异常处理</h3>
+<a href="exDemo">ex demo</a>
 </body>
 </html>
