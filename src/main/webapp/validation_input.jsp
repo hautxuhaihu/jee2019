@@ -8,7 +8,7 @@
 <body leftmargin="30px" topmargin="30px">
 <s:debug/>
 <s:form name="validationDemo" action="validation">
-    <s:textfield name="test_int" label="test_int"/>
+    <s:textfield name="test_int" label="test_int([5,20]?)"/>
     <s:submit/>
 </s:form>
 </body>

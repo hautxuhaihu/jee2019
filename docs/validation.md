@@ -23,3 +23,9 @@ validate()。
         </field-validator>
     </field>
 ```
+##### 从action中指定最大值
+```
+<param name="maxExpression">${maxValue}</param>
+getMaxValue
+```
+`com\opensymphony\xwork2\validator\validators\IntRangeFieldValidator.class`

@@ -5,6 +5,7 @@
     <field name="test_int">
         <field-validator type="int">
             <param name="max">20</param>
+            <param name="minExpression">${minValue}</param>
             <!--<message>超过最大值${max}</message>-->
             <message key="test_int.outof.range"/>
         </field-validator>
