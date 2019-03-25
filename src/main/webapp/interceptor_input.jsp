@@ -16,5 +16,9 @@ myActionWithParams
   <s:textfield name="name"/>
   <s:submit/>
 </s:form>
-
+myActionWithStack
+<s:form name="interceptroDemo3" action="myActionWithStack">
+  <s:textfield name="name"/>
+  <s:submit/>
+</s:form>
 </html>

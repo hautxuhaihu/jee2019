@@ -7,6 +7,14 @@
     <package name="interceptor" extends="struts-default">
         <interceptors>
             <interceptor name="assignDate" class="interceptor.AssignDateInterceptor"/>
+            <interceptor-stack name="assignDateStack">
+                <interceptor-ref name="assignDate"/>
+                <interceptor-ref name="params"/>
+            </interceptor-stack>
+            <interceptor-stack name="selfAssignStack">
+                <interceptor-ref name="assignDate"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
         </interceptors>
         <action name="myActionNoParams" class="controller.MyAction">
             <result>/interceptor_suc.jsp</result>
@@ -17,7 +25,10 @@
             <interceptor-ref name="assignDate"/>
             <interceptor-ref name="params"/>
         </action>
-
+        <action name="myActionWithStack" class="controller.MyAction">
+            <result>/interceptor_suc.jsp</result>
+            <interceptor-ref name="assignDateStack"/>
+        </action>
     </package>
 
 </struts>
