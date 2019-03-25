@@ -5,6 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
     <package name="interceptor" extends="struts-default">
+
         <interceptors>
             <interceptor name="assignDate" class="interceptor.AssignDateInterceptor"/>
             <interceptor-stack name="assignDateStack">
@@ -29,6 +30,25 @@
             <result>/interceptor_suc.jsp</result>
             <interceptor-ref name="assignDateStack"/>
         </action>
+    </package>
+    <package name="sec" namespace="/sec" extends="struts-default">
+        <interceptors>
+            <interceptor name="secCheck" class="interceptor.SecCheckInterceptor"/>
+            <interceptor-stack name="secStack">
+                <interceptor-ref name="secCheck"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="secStack"/>
+        <global-results>
+            <result name="login">/login_s2.jsp</result>
+        </global-results>
+        <action name="private" class="controller.MyAction">
+            <result>/interceptor_suc.jsp</result>
+            <result name="login">/login_s2.jsp</result>
+            <interceptor-ref name="secCheck"/>
+        </action>
+
     </package>
 
 </struts>

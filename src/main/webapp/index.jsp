@@ -39,6 +39,9 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <h3>拦截器</h3>
 <a href="myAction">设置日期</a>
 <a href="interceptor_input.jsp">通过文本框为赋值</a>
+<s:url var="privateUrl" action="private" namespace="/sec"/>
+<a href="${privateUrl}">没有登录不能访问</a>
+<br>
 
 </body>
 </html>
