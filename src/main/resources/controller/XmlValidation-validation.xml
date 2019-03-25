@@ -16,4 +16,13 @@
             <message>必须输入值</message>
         </field-validator>
     </field>
+    <field name="test_stringlength">
+        <field-validator type="requiredstring">
+            <message>必须输入值</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="minLength">3</param>
+            <message>长度至少${minLength}，现在是${test_stringlength.length()}</message>
+        </field-validator>
+    </field>
 </validators>

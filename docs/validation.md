@@ -29,3 +29,5 @@ validate()。
 getMaxValue
 ```
 `com\opensymphony\xwork2\validator\validators\IntRangeFieldValidator.class`
+#### stringlength校验器
+没有输入不会校验。需要先用requiredstring保证输入值
