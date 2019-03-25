@@ -25,4 +25,10 @@
             <message>长度至少${minLength}，现在是${test_stringlength.length()}</message>
         </field-validator>
     </field>
+    <field name="stu">
+        <field-validator type="visitor">
+            <param name="appendPrefix">true</param>
+            <message>stu.visitor</message>
+        </field-validator>
+    </field>
 </validators>

@@ -31,3 +31,13 @@ getMaxValue
 `com\opensymphony\xwork2\validator\validators\IntRangeFieldValidator.class`
 #### stringlength校验器
 没有输入不会校验。需要先用requiredstring保证输入值
+
+#### visitor
+```
+    <field name="stu">
+        <field-validator type="visitor">
+            <param name="appendPrefix">true</param>
+            <message>stu.visitor</message>
+        </field-validator>
+    </field>
+```

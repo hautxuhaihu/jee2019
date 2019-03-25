@@ -2,6 +2,7 @@ package controller;
 
 
 import com.opensymphony.xwork2.ActionSupport;
+import domain.Stu;
 import lombok.*;
 
 public class XmlValidation extends ActionSupport {
@@ -13,4 +14,9 @@ public class XmlValidation extends ActionSupport {
   private String test_requiredstring;
   @Getter @Setter
   private String test_stringlength;
+  @Getter @Setter
+  private String test_email;
+  @Getter @Setter
+  private Stu stu;
+
 }
