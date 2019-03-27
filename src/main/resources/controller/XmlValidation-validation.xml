@@ -24,6 +24,11 @@
             <param name="minLength">3</param>
             <message>长度至少${minLength}，现在是${test_stringlength.length()}</message>
         </field-validator>
+        <field-validator type="regex">
+            <!-- \d{10} -->
+            <param name="regexExpression">123.*456</param>
+            <message>regex校验，123.*456</message>
+        </field-validator>
     </field>
     <field name="stu">
         <field-validator type="visitor">
