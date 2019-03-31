@@ -18,10 +18,13 @@ public class FileUpload extends ActionSupport {
   String uploadContentType;
   @Setter @Getter
   String uploadFileName;
+  @Getter
+  String uploadPath;
   @Override public String execute(){
     String realPath= ServletActionContext.getServletContext().getRealPath("/upload");
     Path destPath= Paths.get(realPath,uploadFileName);
     try {
+      uploadPath="upload/"+uploadFileName;
       Files.copy(upload.toPath(),destPath, StandardCopyOption.REPLACE_EXISTING);
     } catch (IOException e) {
       e.printStackTrace();
