@@ -20,5 +20,10 @@
             <result>/upload_suc.jsp</result>
             <result name="input">/upload.jsp</result>
         </action>
+        <action name="xml" class="controller.FileDown">
+            <result type="stream">
+                <param name="inputName">xml</param>
+            </result>
+        </action>
      </package>
 </struts>

@@ -15,4 +15,5 @@ String[]或List<String> uploadsFileName;
 ```
 
 ### result type
-stream
+stream    
+public InputStream getStream()
