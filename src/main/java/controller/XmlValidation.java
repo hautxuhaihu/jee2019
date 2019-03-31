@@ -5,6 +5,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import domain.Stu;
 import lombok.*;
 
+import java.util.Date;
+
 public class XmlValidation extends ActionSupport {
   @Getter @Setter
   private int test_int;
@@ -22,6 +24,8 @@ public class XmlValidation extends ActionSupport {
   private String pass;
   @Getter @Setter
   private String repass;
+  @Getter @Setter
+  private Date html5_date;
 
 
 }

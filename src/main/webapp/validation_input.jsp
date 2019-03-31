@@ -16,6 +16,8 @@
     <s:textfield name="stu.username" label="stu.username"/>
     <s:textfield name="pass" label="pass"/>
     <s:textfield name="repass" label="repass"/>
+    <s:textfield name="html5_date" label="html5_date" type="date"
+     value="%{getText('format.date',{html5_date})}"/>
     <s:submit/>
 </s:form>
 </body>

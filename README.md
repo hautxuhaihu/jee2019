@@ -61,7 +61,7 @@
   - [x] visitor
   - [x] fieldexpression
   - [x] expression
-  - [ ] 校验器短路
+  - [x] 校验器短路
   - [ ] 输入日期
  #### 文件上传下载
   - [ ] 文件上传、拷贝
