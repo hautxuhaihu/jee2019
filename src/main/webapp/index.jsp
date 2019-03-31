@@ -48,5 +48,8 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <hr width="30%" align="left" style="border:1px solid red"/>
 <h3>xml中进行校验</h3>
 <a href="validation_input.jsp">xml校验</a>
+<hr width="30%" align="left" style="border:1px solid red"/>
+<h3>上传下载</h3>
+<a href="upload.jsp">upload</a>
 </body>
 </html>
