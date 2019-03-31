@@ -34,7 +34,7 @@
         <action name="fileDown" class="controller.FileDown">
             <result type="stream">
                 <param name="inputName">fileDown</param>
-                <param name="contentDisposition">attachement;filename="${uploadFileName}"</param>
+                <param name="contentDisposition">attachement;filename="${cnFileName}"</param>
             </result>
         </action>
      </package>
