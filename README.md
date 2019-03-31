@@ -31,14 +31,56 @@
  - [x] gretty
  - [x] junit
  #### i18n
- - [ ] java中的i18n
-   - [ ] Locale
-   - [ ] 资源文件，编码，ResourceBundle
-   - [ ] MessageFormat，占位符
-   - [ ] 显示所有语言地区
-  - [ ] struts2中国际化
-    - [ ] action中显示国际化信息，占位符
-    - [ ] jsp中国际化信息，forward和redirect时不同，占位符
-    - [ ] 缺省资源文件，首页从哪取值
-    - [ ] 使用资源文件中其它key
-   
+ - [x] java中的i18n
+   - [x] Locale
+   - [x] 资源文件，编码，ResourceBundle
+   - [x] MessageFormat，占位符
+   - [x] 显示所有语言地区
+  - [x] struts2中国际化
+    - [x] action中显示国际化信息，占位符
+    - [x] jsp中国际化信息，forward和redirect时不同，占位符
+    - [x] 缺省资源文件，首页从哪取值
+ #### namespace
+ - [x] 缺省
+ - [x] /
+ - [x] /cn/hn
+ ####  拦截器
+  - [x] 自己声明拦截器为action设置值
+  - [x] params拦截器
+  - [x] 安全拦截器，全局结果和局部结果
+  - [x] 拦截器堆栈、缺省拦截器等
+ #### 异常处理
+ - [x]  局部异常处理、全局异常处理
+ #### 校验器
+  - [x] int
+  - [x] 从action取最大最小
+  - [x] double
+  - [x] requiredstring
+  - [x] stringlength
+  - [x] html5的email
+  - [x] visitor
+  - [ ] fieldexpression
+  - [ ] expression
+  - [ ] 校验器短路
+  - [ ] 输入日期
+ #### 文件上传下载
+  - [ ] 文件上传、拷贝
+  - [ ] 限制文件大小、类型、扩展名
+  - [ ] 多文件上传
+  - [ ] stream结果
+    - [ ] txt、附件、直接打开
+    - [ ] img
+    - [ ] 文件下载
+    - [ ] 中文文件名    
+ #### jdbc
+ - [ ] spring、redis
+    - [ ] spring xml
+    - [ ] spring java
+    - [ ] spring jdbc
+    - [ ] redis
+    - [ ] cache
+ - [ ] mybatis、分页
+ - [ ] jdbc
+ - [ ] echarts
+ #### jquery
+ #### app
