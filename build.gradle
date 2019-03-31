@@ -17,6 +17,10 @@ repositories {
 gretty{
     servletContainer = 'tomcat8'
 }
+configurations {
+    // remove default logger
+    all*.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+}
 dependencies {
     //compileOnly 'org.projectlombok:lombok:1.18.2'
     //annotationProcessor 'org.projectlombok:lombok:1.18.2'//1.16.20
@@ -41,4 +45,5 @@ task dbManager(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
     main = 'org.hsqldb.util.DatabaseManagerSwing'
 }
-mainClassName="demo.I18NDemo"
+//mainClassName="demo.I18NDemo"
+mainClassName="demo.spring.xml.SpringXmlDemo"
