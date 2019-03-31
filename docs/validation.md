@@ -30,7 +30,7 @@ getMaxValue
 ```
 `com\opensymphony\xwork2\validator\validators\IntRangeFieldValidator.class`
 #### stringlength校验器
-没有输入不会校验。需要先用requiredstring保证输入值
+没有输入不会校验。需要先用requiredstring保证输入值。
 
 #### visitor
 ```
@@ -39,5 +39,14 @@ getMaxValue
             <param name="appendPrefix">true</param>
             <message>stu.visitor</message>
         </field-validator>
-    </field>
+    </field> 
+    
 ```
+#### expression
+唯一的非字段校验器，错误信息actionError。`<s:actionerror/>`
+
+#### 校验器的短路
+1. 非字段校验器先运行，字段校验器后运行
+2. 同一个变量的多个校验器按照定义的先后顺序运行。多个非字段按照定义的先后顺序运行。
+
+短路：校验不通过，后边的不运行

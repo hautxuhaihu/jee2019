@@ -59,8 +59,8 @@
   - [x] stringlength
   - [x] html5的email
   - [x] visitor
-  - [ ] fieldexpression
-  - [ ] expression
+  - [x] fieldexpression
+  - [x] expression
   - [ ] 校验器短路
   - [ ] 输入日期
  #### 文件上传下载

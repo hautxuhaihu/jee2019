@@ -9,6 +9,7 @@
             <!--<message>超过最大值${max}</message>-->
             <message key="test_int.outof.range"/>
         </field-validator>
+        <!--  test_int<20&&test_int>5-->
     </field>
     <field name="test_requiredstring">
         <field-validator type="requiredstring">
@@ -30,6 +31,16 @@
             <message>regex校验，123.*456</message>
         </field-validator>
     </field>
+    <field name="pass">
+        <field-validator type="fieldexpression">
+            <param name="expression">pass.startsWith("123")</param>
+            <message>pass没有以123开头</message>
+        </field-validator>
+</field>
+    <validator type="expression">
+        <param name="expression">pass.equals(repass)</param>
+        <message>两次输入的密码必须一致</message>
+    </validator>
     <field name="stu">
         <field-validator type="visitor">
             <param name="appendPrefix">true</param>

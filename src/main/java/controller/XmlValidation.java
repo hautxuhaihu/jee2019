@@ -18,5 +18,10 @@ public class XmlValidation extends ActionSupport {
   private String test_email;
   @Getter @Setter
   private Stu stu;
+  @Getter @Setter
+  private String pass;
+  @Getter @Setter
+  private String repass;
+
 
 }
