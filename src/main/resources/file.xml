@@ -5,9 +5,20 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+    <constant name="struts.multipart.maxSize" value="5000000"/>
     <package name="file" extends="struts-default">
+
         <action name="upload" class="controller.FileUpload">
             <result>/upload_suc.jsp</result>
+        </action>
+        <action name="uploadWithMaximumSize" class="controller.FileUpload">
+            <interceptor-ref name="defaultStack">
+                <param name="fileUpload.maximumSize">10000</param>
+               <!-- <param name="fileUpload.allowedExtensions">.txt,.java</param>-->
+                <!--<param name="fileUpload.allowedTypes">image/jpg,image/gif</param>-->
+            </interceptor-ref>
+            <result>/upload_suc.jsp</result>
+            <result name="input">/upload.jsp</result>
         </action>
      </package>
 </struts>

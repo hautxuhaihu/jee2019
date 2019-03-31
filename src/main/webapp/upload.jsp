@@ -5,9 +5,16 @@
     <title>login</title>
 </head>
 <body leftmargin="30px" topmargin="30px">
+
 <s:form name="upload" action="upload" method="post" enctype="multipart/form-data">
     <s:file name="upload" label="upload"/>
     <s:submit/>
 </s:form>
+uploadWithMaximumSize(<10k)
+<s:form name="upload" action="uploadWithMaximumSize" method="post" enctype="multipart/form-data">
+    <s:file name="upload" label="upload"/>
+    <s:submit/>
+</s:form>
+
 </body>
 </html>
