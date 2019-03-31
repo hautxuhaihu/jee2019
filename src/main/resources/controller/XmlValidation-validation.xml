@@ -32,12 +32,16 @@
         </field-validator>
     </field>
     <field name="pass">
+        <field-validator type="stringlength" short-circuit="true">
+            <param name="minLength">3</param>
+            <message>应该是${minLength}，现在是${pass.length()}</message>
+        </field-validator>
         <field-validator type="fieldexpression">
             <param name="expression">pass.startsWith("123")</param>
             <message>pass没有以123开头</message>
         </field-validator>
 </field>
-    <validator type="expression">
+    <validator type="expression" short-circuit="true">
         <param name="expression">pass.equals(repass)</param>
         <message>两次输入的密码必须一致</message>
     </validator>
