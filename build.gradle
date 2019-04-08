@@ -34,6 +34,9 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2', version: '2.1.1.RELEASE'
     
     compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.1.1.RELEASE'
+    compile('com.alibaba:druid:1.1.6')
+    compile('org.springframework.boot:spring-boot-starter-jdbc:2.1.1.RELEASE')
+    testCompile('org.springframework.boot:spring-boot-starter-test:2.1.1.RELEASE')
 
 }
 task dbStart(type: JavaExec) {
