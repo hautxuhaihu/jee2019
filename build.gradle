@@ -46,4 +46,5 @@ task dbManager(type: JavaExec) {
     main = 'org.hsqldb.util.DatabaseManagerSwing'
 }
 //mainClassName="demo.I18NDemo"
-mainClassName="demo.spring.xml.SpringXmlDemo"
+//mainClassName="demo.spring.xml.SpringXmlDemo"
+mainClassName="demo.spring._java.SpringJavaConfigDemo"
