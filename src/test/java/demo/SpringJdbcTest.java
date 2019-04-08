@@ -8,12 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -27,7 +29,9 @@ public class SpringJdbcTest {
   @Autowired
   public void setJdbcTemplate(DataSource dataSource){
     jdbcTemplate=new JdbcTemplate(dataSource);
+    namedParameterJdbcTemplate=new NamedParameterJdbcTemplate(dataSource);
   }
+  NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
   @Test
   public void testGetAll(){
@@ -55,5 +59,13 @@ public class SpringJdbcTest {
     List<Map<String,Object>> stus=jdbcTemplate.queryForList("select * from stu");
     log.debug("{}",stus);
   }
-
+  @Test
+  public void check(){
+    String username="java";
+    String sql="select * from stu where username=:username";
+    Map<String,Object> argsMap=new HashMap<>();
+    argsMap.put("username",username);
+    List<Map<String,Object>> res=namedParameterJdbcTemplate.queryForList(sql,argsMap);
+    assertTrue(res.size()>0);
+  }
 }
