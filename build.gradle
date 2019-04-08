@@ -47,4 +47,5 @@ task dbManager(type: JavaExec) {
 }
 //mainClassName="demo.I18NDemo"
 //mainClassName="demo.spring.xml.SpringXmlDemo"
-mainClassName="demo.spring._java.SpringJavaConfigDemo"
+//mainClassName="demo.spring._java.SpringJavaConfigDemo"
+mainClassName="demo.spring.xmljava.SpringXmlJavaDemo"
