@@ -14,8 +14,9 @@ public class StuMISByRedis {
 
   public static void main(String[] args) {
     StuMISByRedis mis=new StuMISByRedis();
-    mis.init();
-    mis.findById(2L);
+    //mis.init();
+    //mis.findById(2L);
+    mis.sortByScore("java",2);
   }
   public void init(){
     for(int i=0;i<10;i++){
@@ -43,6 +44,14 @@ public class StuMISByRedis {
       return;
     }
     logger.debug("{}",redis.hgetAll("stu:"+id));
+  }
+  public void sortByScore(String course,int page){
+     int start=(page-1)*3;
+     int end=page*3-1;
+     Set<String> ids=redis.zrange("stu:score:"+course,start,end);
+     for(String id:ids){
+       logger.debug("{}",redis.hgetAll("stu:"+id));
+     }
   }
 
 }
