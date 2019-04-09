@@ -35,6 +35,7 @@
             <appenderRef ref="error"/>
         </logger>
         <logger name="demo" level="debug"/>
+        <logger name="dao" level="debug"/>
         <logger name="com.apache.struts2" level="info"/>
         <Root level="info">
             <appenderRef ref="console"/>
