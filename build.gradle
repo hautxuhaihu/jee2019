@@ -3,8 +3,9 @@ plugins {
     id 'war'
     id 'application'
     id "io.freefair.lombok" version "3.1.4"
+    id 'org.gretty' version '2.3.1'
 }
-apply from: 'gretty.plugin'
+//apply from: 'gretty.plugin'
 group 'cn.simple'
 version '1.0'
 
