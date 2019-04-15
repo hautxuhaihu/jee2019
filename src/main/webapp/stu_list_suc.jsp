@@ -30,10 +30,15 @@
       </s:url>
       <a href="${delUrl}" onclick="return toDel(<s:property value='#stu.id'/>);">del</a>
       </s:iterator>
+</table>
       <script>
           function toDel(id) {
               return confirm("是否真的删除学号为" + id + "的信息?");
           }
       </script>
+
+    <br>
+
+    <a href="stu_new.jsp">new stu</a>
 </body>
 </html>
