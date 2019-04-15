@@ -25,6 +25,10 @@ public class StuAction {
     stus=dao.getAll();
     return SUCCESS;
   }
+  public String edit(){
+    stu=dao.findById(id);
+    return SUCCESS;
+  }
   public String add(){
     int row=dao.add(stu);
     return row>0?SUCCESS:ERROR;
