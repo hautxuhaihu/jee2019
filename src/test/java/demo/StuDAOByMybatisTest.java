@@ -47,4 +47,10 @@ public class StuDAOByMybatisTest {
     Stu newStu=dao.findById(8L);
     assertEquals(newStu.getUsername(),newName);
   }
+  @Test
+  public void testDelById(){
+    int row=dao.delById(7L);
+    log.debug("del res:{}",row);
+  }
+
 }

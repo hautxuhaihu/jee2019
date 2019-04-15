@@ -10,7 +10,7 @@
        <action name="stu_*" class="controller.StuAction" method="{1}">
            <result>/stu_{1}_suc.jsp</result>
            <result name="error">/stu_{1}_error.jsp</result>
-           <allowed-methods>list</allowed-methods>
+           <allowed-methods>list,del,edit,upate</allowed-methods>
        </action>
    </package>
 </struts>
