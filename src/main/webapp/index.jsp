@@ -51,5 +51,8 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <hr width="30%" align="left" style="border:1px solid red"/>
 <h3>上传下载</h3>
 <a href="upload.jsp">upload</a>
-</body>
+<hr width="30%" align="left" style="border:1px solid red"/>
+<h3>jdbc</h3>
+<s:url var="listUrl" action="stu_list"/>
+<a href="${listUrl}">stu list</a>
 </html>

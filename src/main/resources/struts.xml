@@ -52,4 +52,5 @@
     <include file="ns.xml"/>
     <include file="interceptor.xml"/>
     <include file="file.xml"/>
+    <include file="jdbc.xml"/>
 </struts>
