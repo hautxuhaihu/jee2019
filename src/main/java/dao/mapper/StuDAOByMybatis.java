@@ -13,7 +13,7 @@ public interface StuDAOByMybatis {
   @Select("select * from stu")
   List<Stu> getAll();
 
-  @Cacheable(value = "allStus:page")
+  //@Cacheable(value = "allStus:page")
   @Select("select * from stu")
   List<Stu> getAllByPageNumSize(@Param("pageNum") int pageNum,@Param("pageSize")int pageSize);
 
