@@ -55,12 +55,4 @@ public class StuDAOByMybatisTest {
     int row=dao.delById(7L);
     log.debug("del res:{}",row);
   }
-  @Autowired
-  StuPageService service;
-  @Repeat(3)
-  @Test public void testGetByPage(){
-    PageInfo<Stu> stus=service.findByPage(2,3);
-    log.debug("{}", stus);
-  }
-
 }
