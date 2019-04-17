@@ -48,6 +48,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-redis:2.1.1.RELEASE')
     compile group: 'org.apache.struts', name: 'struts2-spring-plugin', version: '2.5.5'
     compile('org.springframework.boot:spring-boot-starter-web:2.1.1.RELEASE')
+
+    compile('com.github.pagehelper:pagehelper:5.1.8')
 }
 task dbStart(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath

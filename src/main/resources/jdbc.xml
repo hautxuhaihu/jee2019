@@ -12,5 +12,8 @@
            <result name="error">/stu_{1}_error.jsp</result>
            <allowed-methods>add,list,del,edit,update</allowed-methods>
        </action>
+       <action name="stu_list_page" class="controller.StuListByPage">
+           <result>/stu_list_page.jsp</result>
+       </action>
    </package>
 </struts>

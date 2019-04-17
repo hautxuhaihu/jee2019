@@ -55,4 +55,6 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <h3>jdbc</h3>
 <s:url var="listUrl" action="stu_list"/>
 <a href="${listUrl}">stu list</a>
+<s:url var="listByPageUrl" action="stu_list_page"/>
+<a href="${listByPageUrl}">stu list by page</a>
 </html>

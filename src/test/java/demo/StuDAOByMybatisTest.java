@@ -1,5 +1,6 @@
 package demo;
 
+import com.github.pagehelper.PageInfo;
 import dao.mapper.StuDAOByMybatis;
 import domain.Stu;
 import lombok.extern.slf4j.Slf4j;
@@ -51,6 +52,10 @@ public class StuDAOByMybatisTest {
   public void testDelById(){
     int row=dao.delById(7L);
     log.debug("del res:{}",row);
+  }
+  @Test public void testGetByPage(){
+    List<Stu> stus=dao.getAllByPageNumSize(2,3);
+    log.debug("{}", PageInfo.of(stus));
   }
 
 }

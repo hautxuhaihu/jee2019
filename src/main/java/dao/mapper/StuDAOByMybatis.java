@@ -12,6 +12,10 @@ public interface StuDAOByMybatis {
   @Cacheable("allStus")
   @Select("select * from stu")
   List<Stu> getAll();
+  //@Cacheable("allStus")
+  @Select("select * from stu")
+  List<Stu> getAllByPageNumSize(@Param("pageNum") int pageNum,@Param("pageSize")int pageSize);
+
   @Cacheable("allStus")
   @Select("select * from stu where id=#{id}")
   Stu findById(@Param("id") long id);
