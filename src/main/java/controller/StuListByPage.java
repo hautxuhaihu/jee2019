@@ -7,6 +7,7 @@ import domain.Stu;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
+import service.StuPageService;
 
 import java.util.List;
 
@@ -16,12 +17,11 @@ public class StuListByPage extends ActionSupport {
   @Setter @Getter
   int pageSize=2;
   @Setter @Getter @Autowired
-  StuDAOByMybatis dao;
+  StuPageService service;
   @Setter @Getter
   PageInfo res;//list,navigatepageNums
   public String execute(){
-    List<Stu> stus=dao.getAllByPageNumSize(pageNum,pageSize);
-    res=PageInfo.of(stus);
+    res=service.findByPage(pageNum,pageSize);
     return SUCCESS;
   }
 }

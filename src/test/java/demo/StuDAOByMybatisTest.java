@@ -7,8 +7,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Repeat;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import service.StuPageService;
 
 import java.util.List;
 
@@ -53,9 +55,12 @@ public class StuDAOByMybatisTest {
     int row=dao.delById(7L);
     log.debug("del res:{}",row);
   }
+  @Autowired
+  StuPageService service;
+  @Repeat(3)
   @Test public void testGetByPage(){
-    List<Stu> stus=dao.getAllByPageNumSize(2,3);
-    log.debug("{}", PageInfo.of(stus));
+    PageInfo<Stu> stus=service.findByPage(2,3);
+    log.debug("{}", stus);
   }
 
 }

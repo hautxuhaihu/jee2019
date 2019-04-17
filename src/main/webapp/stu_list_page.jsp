@@ -5,6 +5,7 @@
   <title>stu</title>
 </head>
 <body leftmargin="30px" topmargin="30px">
+<s:debug/>
 <table>
   <tr>
     <td>id

@@ -52,7 +52,7 @@ dependencies {
     compile('com.github.pagehelper:pagehelper:5.1.8')
 
     compile group: 'org.apache.struts', name: 'struts2-json-plugin', version: '2.5.20'
-
+    
     compile( 'com.jgeppert.struts2.jquery:struts2-jquery-plugin:4.0.3')
 }
 task dbStart(type: JavaExec) {
