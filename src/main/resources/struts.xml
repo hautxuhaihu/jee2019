@@ -53,4 +53,5 @@
     <include file="interceptor.xml"/>
     <include file="file.xml"/>
     <include file="jdbc.xml"/>
+    <include file="jquery.xml"/>
 </struts>

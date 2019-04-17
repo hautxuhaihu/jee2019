@@ -57,4 +57,8 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <a href="${listUrl}">stu list</a>
 <s:url var="listByPageUrl" action="stu_list_page"/>
 <a href="${listByPageUrl}">stu list by page</a>
+<hr width="30%" align="left" style="border:1px solid red"/>
+<h3>ajax</h3>
+<s:url var="jsonDemoUrl" action="jsonDemo"/>
+<a href="${jsonDemoUrl}">jsonDmeo</a>
 </html>
