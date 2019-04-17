@@ -18,6 +18,13 @@
 <div id="result2"></div>
 <s:url var="stuListUrl" action="stu_list"/>
 <sj:a href="%{stuListUrl}" targes="result1,result2" button="true">show stu list</sj:a>
+<hr>
+<h3>提交form</h3>
+<s:form id="loginTag" action="checkLogin">
+  <s:textfield name="username" label="username" requiredLabel="true"/>
+  <s:password name="pass" label="pass"/>
+</s:form>
+<sj:a formIds="loginTag" targets="formRes" button="true">submit form</sj:a>
+<div id="formRes">form res</div>
 </body>
 </html>
-s
