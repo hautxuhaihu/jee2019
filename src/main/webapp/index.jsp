@@ -62,4 +62,5 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <s:url var="jsonDemoUrl" action="jsonDemo"/>
 <a href="${jsonDemoUrl}">jsonDmeo</a><br>
 <a href="jquery/ajax_a.jsp">sj:a</a><br>
+<a href="jquery/ajax_login.jsp">sj:a submit</a><br>
 </html>

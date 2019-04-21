@@ -11,5 +11,9 @@
         <action name="echo" class="jquery.Echo">
             <result>/jquery/echo_suc.jsp</result>
         </action>
+        <action name="checkLoginByAjax" class="controller.CheckLoginByAjax">
+            <result name="input">/jquery/ajax_login.jsp</result>
+            <result name="suc">/jquery/ajax_login_suc.jsp</result>
+        </action>
     </package>
 </struts>

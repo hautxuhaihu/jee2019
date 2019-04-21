@@ -20,11 +20,12 @@
 <sj:a href="%{stuListUrl}" targets="result1,result2" button="true">show stu list</sj:a>
 <hr>
 <h3>提交form</h3>
+<div id="formRes">
 <s:form id="loginTag" action="checkLogin">
   <s:textfield name="username" label="username" requiredLabel="true"/>
   <s:password name="pass" label="pass"/>
 </s:form>
 <sj:a formIds="loginTag" targets="formRes" button="true">submit form</sj:a>
-<div id="formRes">form res</div>
+</div>
 </body>
 </html>
