@@ -19,5 +19,11 @@
             <result name="input">/jquery/ajax_submit.jsp</result>
             <result>/jquery/echo_suc.jsp</result>
         </action>
+        <action name="findSheng" class="jquery.RegionAction" method="findSheng">
+            <result type="json"/>
+        </action>
+        <action name="findByTerm" class="jquery.RegionAction" method="findByTerm">
+            <result type="json"/>
+        </action>
     </package>
 </struts>

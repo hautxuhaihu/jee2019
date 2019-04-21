@@ -65,4 +65,6 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <a href="jquery/ajax_login.jsp">sj:a submit</a><br>
 <a href="jquery/ajax_div.jsp">sj:div 异步加载内容</a><br>
 <a href="jquery/ajax_submit.jsp">sj:div 异步提交</a><br>
+<a href="jquery/ajax_dialog.jsp">sj:dialog 显示对话框（本地或远程、自动打开或监听事件打开）</a><br>
+<a href="jquery/ajax_autocompleter.jsp">sj:autocompleter 自动完成</a><br>
 </html>
