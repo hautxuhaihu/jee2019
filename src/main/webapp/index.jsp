@@ -64,4 +64,5 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <a href="jquery/ajax_a.jsp">sj:a</a><br>
 <a href="jquery/ajax_login.jsp">sj:a submit</a><br>
 <a href="jquery/ajax_div.jsp">sj:div 异步加载内容</a><br>
+<a href="jquery/ajax_submit.jsp">sj:div 异步提交</a><br>
 </html>
