@@ -36,6 +36,16 @@ public class RegionAction extends ActionSupport {
     return SUCCESS;
   }
 
+  public String findShiOrXian() {
+    if (sheng.equals("-1")) return SUCCESS;
+    if (shi.equals("-1")) {
+      res = dao.getAll(sheng);
+    } else {
+      res = dao.getAll(shi);
+    }
+    return SUCCESS;
+  }
+
   public String findByTerm() {
     res = dao.findByName(term);
     return SUCCESS;
