@@ -17,10 +17,22 @@ public class RegionAction extends ActionSupport {
   RegionDAO dao;
   @Setter
   @Getter
-  String term;//autocompleter发送的关键字变量名
+  String term, sheng = "-1", shi = "-1";//autocompleter发送的关键字变量名
 
   public String findSheng() {
     shengs = dao.getAll("0");
+    return SUCCESS;
+  }
+
+  public String findShi() {
+    if (!sheng.equals("-1"))
+      shis = dao.getAll(sheng);
+    return SUCCESS;
+  }
+
+  public String findXian() {
+    if (!shi.equals("-1"))
+      xians = dao.getAll(shi);
     return SUCCESS;
   }
 

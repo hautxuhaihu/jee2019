@@ -20,7 +20,19 @@
             <result>/jquery/echo_suc.jsp</result>
         </action>
         <action name="findSheng" class="jquery.RegionAction" method="findSheng">
-            <result type="json"/>
+            <result type="json">
+                <param name="includeProperties">shengs.*</param>
+            </result>
+        </action>
+        <action name="findShi" class="jquery.RegionAction" method="findShi">
+            <result type="json">
+                <param name="includeProperties">shis.*</param>
+            </result>
+        </action>
+        <action name="findXian" class="jquery.RegionAction" method="findXian">
+            <result type="json">
+                <param name="includeProperties">xians.*</param>
+            </result>
         </action>
         <action name="findByTerm" class="jquery.RegionAction" method="findByTerm">
             <result type="json"/>
