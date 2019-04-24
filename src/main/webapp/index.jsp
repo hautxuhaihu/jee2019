@@ -70,4 +70,5 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <a href="jquery/ajax_dbselect.jsp">联动双选框</a><br>
 <a href="jquery/ajax_dbselect_load.jsp">根据双选框显示不同页面</a><br>
 <a href="jquery/ajax_accordion.jsp">手风琴<a><br>
+    <a href="jquery/ajax_accordion_list.jsp">手风琴 from list<a><br>
 </html>
