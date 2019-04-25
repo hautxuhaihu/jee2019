@@ -27,7 +27,7 @@
              list="shis" listKey="region_code" listValue="region_name"
              headerKey="-1" headerValue="please select"/>
 </s:form>
-<sj:div id="loadShiOrXian" href="%{findShiOrXian}" formIds="dbSelectForm" deferredLoading="true"
+<sj:div id="loadShiOrXian" href="%{findShiOrXianUrl}" formIds="dbSelectForm" deferredLoading="true"
         reloadTopics="reloadXian,reloadXianAfterSuc"/>
 </body>
 </html>
