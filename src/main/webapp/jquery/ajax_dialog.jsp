@@ -23,9 +23,9 @@
 
 <h3>通过sj:a为sj:dialog指定href</h3>
 <sj:dialog id="hrefDlg" autoOpen="false" modal="true"/>
-<sj:a id="stuListBtn" openDialog="stuListDlg" openDialogTitle="stu list" href="%{stuListUrl}"
+<sj:a id="stuListBtn" openDialog="hrefDlg" openDialogTitle="stu list" href="%{stuListUrl}"
       button="true">指定dialog打开stu list</sj:a>
-<sj:a id="regionListBtn" openDialog="stuListDlg" openDialogTitle="省" href="%{findShengUrl}"
+<sj:a id="regionListBtn" openDialog="hrefDlg" openDialogTitle="省" href="%{findShengUrl}"
       button="true">指定dialog显示所有省</sj:a>
 </body>
 </html>
