@@ -54,6 +54,7 @@ dependencies {
     compile group: 'org.apache.struts', name: 'struts2-json-plugin', version: '2.5.20'
     
     compile( 'com.jgeppert.struts2.jquery:struts2-jquery-plugin:4.0.3')
+    compile group: 'com.jgeppert.struts2.jquery', name: 'struts2-jquery-richtext-plugin', version: '4.0.3'
 }
 task dbStart(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath

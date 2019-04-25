@@ -9,7 +9,7 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
 <head>
-    <title>wel,struts2</title>
+  <title>wel,struts2</title>
 </head>
 <body leftmargin="30px" topmargin="30px">
 <s:debug/>
@@ -69,6 +69,8 @@ Struts2+Spring(Spring Boot)+MyBatis+Redis+JQuery
 <a href="jquery/ajax_autocompleter.jsp">sj:autocompleter 自动完成</a><br>
 <a href="jquery/ajax_dbselect.jsp">联动双选框</a><br>
 <a href="jquery/ajax_dbselect_load.jsp">根据双选框显示不同页面</a><br>
-<a href="jquery/ajax_accordion.jsp">手风琴<a><br>
-    <a href="jquery/ajax_accordion_list.jsp">手风琴 from list<a><br>
+<a href="jquery/ajax_accordion.jsp">手风琴</a>><br>
+<a href="jquery/ajax_accordion_list.jsp">手风琴 from list</a><br>
+<a href="jquery/ajax_richtext.jsp">文本编辑器</a>
+</body>
 </html>
